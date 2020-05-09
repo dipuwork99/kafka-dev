@@ -1,5 +1,7 @@
 
 
+New changes.
+
 https://docs.confluent.io/3.2.0/connect/managing.html
 
 
