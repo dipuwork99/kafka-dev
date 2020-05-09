@@ -38,3 +38,8 @@ This will also remove any files not present or deleted (Tracked files in the cur
 If you only want to add files which are tracked and have changed, you would want to do
 
 git add -u
+
+
+# Exceute permission on scripts
+
+chmod a+x filename.sh

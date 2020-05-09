@@ -1,0 +1,30 @@
+{
+  "name": "mq-avro-source",
+  "config": {
+    "connector.class": "io.confluent.connect.ibm.mq.IbmMQSourceConnector",
+    "key.converter": "io.confluent.connect.avro.AvroConverter",
+    "value.converter": "io.confluent.connect.avro.AvroConverter",
+    "transforms": "customExtractField",
+    "transforms.customExtractField.type": "com.maersk.emp.connect.smt.ExtractFieldAndOverrideSchema$Value",
+    "transforms.customExtractField.field": "text",
+    "errors.retry.timeout": "3",
+    "errors.retry.delay.max.ms": "10",
+    "errors.tolerance": "none",
+    "errors.log.enable": "true",
+    "errors.log.include.messages": "true",
+    "mq.hostname": "ibmmq",
+    "mq.port": "1414",
+    "mq.transport.type": "client",
+    "mq.queue.manager": "QM1",
+    "mq.channel": "DEV.ADMIN.SVRCONN",
+    "mq.username": "admin",
+    "mq.password": "passw0rd",
+    "jms.destination.name": "DEV.QUEUE.1",
+    "jms.destination.type": "queue",
+    "kafka.topic": "MQ-Test-Topic",
+    "confluent.topic.bootstrap.servers": "broker:29092",
+    "confluent.topic.replication.factor": "1",
+    "value.converter.schema.registry.url": "https://schema-registry:8081",
+    "key.converter.schema.registry.url": "https://schema-registry:8081"
+  }
+}
