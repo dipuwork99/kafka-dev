@@ -73,20 +73,20 @@ if not install them by doing
 /usr/local/bin/python3 -m pip install docker-compose
 ```
 
-if you run ansible with the -vvv option you can see traces of the error.
+If you run ansible with the -vvv option you can see traces of the error.
 
 ```
 ansible-playbook kafka-dev.yml -i inventory -vvv
 ```
 
-now when ansible runs what it does copy some python code to the target machine and execute them.
-For running docker the key file that was having the issue was the one at```
+Now when ansible runs what it does is copy  python code to the target machine and execute them.
+For running docker the file that was throwing the original error was the one at.
 
 ```
 /Users/XXXX/Library/Python/3.7/lib/python/site-packages/ansible
 ```
 
-the package structure would be some thing similar to the above on your machine
+The package structure would be some thing similar to the above on your machine
 
 Locate the file
 
