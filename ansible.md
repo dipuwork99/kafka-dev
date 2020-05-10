@@ -77,6 +77,7 @@ if you run ansible with the -vvv option you can see traces of the error.
 
 ```
 ansible-playbook kafka-dev.yml -i inventory -vvv
+```
 
 now when ansible runs what it does copy some python code to the target machine and execute them.
 For running docker the key file that was having the issue was the one at```
