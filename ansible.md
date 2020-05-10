@@ -23,15 +23,17 @@ ansible returns with "Failed to import the required Python library (Docker SDK f
 ```
 python -m pip list | grep docker
 python -m pip list | grep requests
-``
+```
 
 I have found that the better check is
 
-```/usr/bin/python -m pip list | grep requests
+```
+/usr/bin/python -m pip list | grep requests
 ```
 and also to install dependencies the better way is
 
-```/usr/bin/python -m pip install docker
+```
+/usr/bin/python -m pip install docker
 ```
 
 Due to the various issues I had upgrade to python3 using brew on mac,
@@ -39,6 +41,7 @@ and hence I never validated if with the default install version of python if eve
 
 
 I switched the python to use a version 3 of the python (Python 3.7.7)
+
 ```
 python -v
 ```
