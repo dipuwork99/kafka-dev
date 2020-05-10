@@ -1,10 +1,12 @@
 
-###Project for setting up my local dev environment on Mac OS with confluent kafka.
 
-###### Kafka components : zookeeper , broker , control center , schema registry , kafka connect
-###### Monitoring setup poc done with datadog.
-###### IBMMQ image used to poc kafka connect IBM MQ Source connector.
+### Project for setting up my local dev environment on Mac OS with confluent kafka.
 
+```
+* Kafka components : zookeeper , broker , control center , schema registry , kafka connect
+* Monitoring setup poc done with datadog.
+* IBMMQ image used to poc kafka connect IBM MQ Source connector.
+```
 **Challenges when setting up local enviornment with ansible and calling dockercompose**
 
 https://stackoverflow.com/questions/59384708/ansible-returns-with-failed-to-import-the-required-python-library-docker-sdk-f
