@@ -1,4 +1,8 @@
 
+ansible -m ping  all -i inventory
+
+https://serverfault.com/questions/662443/running-ansible-task-as-a-specific-user
+
 
 New changes.
 
