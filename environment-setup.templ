@@ -1,0 +1,58 @@
+export CONNECT_HOST_SOURCE="localhost"
+export CONNECT_HOST_PORT="8083"
+export ZOOKEEPER_HOST="localhost"
+export ZOOKEEPER_PORT="2181"
+export CODE_PREFIX=/Users/****/github
+export REST_CONNECTOR_CODE_PREFIX=/Users/***/git
+
+export CONNECT_LOG_DIR=$CODE_PREFIX/logs
+export CONNECT_LOG4J=$CODE_PREFIX/connect-log4j/connect-log4j0.properties
+export REST_CONNECTOR=$KSQLCODE_PREFIX/ksqldb/rest-connector
+export REST_PLUGIN_JARS=$REST_CONNECTOR_CODE_PREFIX/kafka-connect-rest/kafka-connect-rest-plugin/target/kafka-connect-rest-plugin-1.0.3-shaded.jar
+export ADD_HEADERS_JARS=$REST_CONNECTOR_CODE_PREFIX/kafka-connect-rest/kafka-connect-transform-add-headers/target/kafka-connect-transform-add-headers-1.0.3-shaded.jar
+export TRANSFORM_JARS=$REST_CONNECTOR_CODE_PREFIX/kafka-connect-rest/kafka-connect-transform-from-json/kafka-connect-transform-from-json-avro/target/kafka-connect-transform-from-json-avro-1.0.3.jar
+export VELOCITY_JARS=$REST_CONNECTOR_CODE_PREFIX/kafka-connect-rest/kafka-connect-transform-velocity-eval/target/kafka-connect-transform-velocity-eval-1.0.3-shaded.jar
+
+
+alias 1='./env-start.sh'
+alias start='./env-start.sh'
+
+alias 2='./env-restart.sh'
+alias restart='./env-restart.sh'
+
+alias 3='./env-reset.sh'
+alias reset='./env-reset.sh'
+
+alias 4='./env-stop.sh'
+alias stop='./env-stop.sh'
+
+alias 5='./env-destroy.sh'
+alias destroy='./env-destroy.sh'
+
+alias 6='./connectorStatus.sh'
+alias cstatus='./connectorStatus.sh'
+
+alias 7='./eStatus.sh'
+alias estatus='./eStatus.sh'
+
+alias 11='./setup-dev.sh'
+alias devsetup='./setup-dev.sh'
+
+alias 12='./teardown-dev.sh'
+alias devteardown='./teardown-dev.sh'
+
+alias 21='./setup-connectors.sh'
+alias csetup='./setup-connectors.sh'
+
+alias 22='./drop-connectors.sh'
+alias cteardown='./drop-connectors.sh'
+
+alias 23="./listPlugins.sh"
+alias listplugins="./listPlugins.sh"
+
+
+alias 31='./setupRestPlugin.sh'
+alias restplugin='./setupRestPlugin.sh'
+
+
+alias envhelp='./quickrun'

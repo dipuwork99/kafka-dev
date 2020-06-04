@@ -1,3 +1,8 @@
 connect-config/
 mnt/
 .DS_Store
+logs/
+backup/
+environment-setup.cfg
+connectors/
+connector-configs/

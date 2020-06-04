@@ -1,0 +1,30 @@
+
+https://logz.io/blog/kubernetes-docker-mac/
+
+
+version: '3.3'
+
+services:
+  web:
+    image: dockersamples/k8s-wordsmith-web
+    ports:
+     - "80:80"
+
+  words:
+    image: dockersamples/k8s-wordsmith-api
+    deploy:
+      replicas: 5
+      endpoint_mode: dnsrr
+      resources:
+        limits:
+          memory: 50M
+        reservations:
+          memory: 50M
+
+  db:
+    image: dockersamples/k8s-wordsmith-db
+
+  connect:
+    image: cnfldemos/cp-server-connect-datagen:0.2.0-5.4.0
+    ports:
+      - "8083:8083"
