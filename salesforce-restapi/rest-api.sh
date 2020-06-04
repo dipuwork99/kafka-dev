@@ -1,0 +1,1 @@
+curl https://maersk--ctmdev01.my.salesforce.com/services/data/v48.0/sobjects/LS_TM_Connective_Task__c/ -H "Authorization: Bearer ${bearertoken}" -H "Content-Type: application/json" -d "@connective-task.json"

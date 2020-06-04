@@ -1,0 +1,1 @@
+curl -v --compressed -H 'Accept-Encoding: gzip' -H 'Authorization: Bearer ${bearertoken}' -H 'User-Agent: Google-HTTP-Java-Client/1.32.1 (gzip)' -- 'https://maersk--ctmdev01.my.salesforce.com/services/data/'
