@@ -11,4 +11,7 @@ cp /Users/vanilla/.m2/repository/com/ibm/mq/com.ibm.mq.allclient/9.1.3.0/com.ibm
 cp /Users/vanilla/eclipse-workspace/emp-custom-smt/kafka-connect-custom-InputMessageValidator/src/main/resources/config/myapp/config.properties /Users/vanilla/Documents/code/kafka-dev/connect-config/props/config.properties
 rm /Users/dipuchakrapani/github/kafka-dev/connectors/salesforce/lib/salesforce-0.0.1-SNAPSHOT.jar
 cp /Users/dipuchakrapani/eclipse-workspace/salesfore-sink-connector/salesforce/target/salesforce-0.0.1-SNAPSHOT.jar /Users/dipuchakrapani/github/kafka-dev/connectors/salesforce/lib/salesforce-0.0.1-SNAPSHOT.jar
+rm ${CODE_PREFIX}/connectors/salesforce/lib/salesforce-0.0.1-SNAPSHOT.jar
+cp ${SALESFORCE_CUSTOM_JAR} ${CODE_PREFIX}/connectors/salesforce/lib/salesforce-0.0.1-SNAPSHOT.jar
+
 docker-compose up -d
