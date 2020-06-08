@@ -135,7 +135,7 @@ services:
     volumes:
       - ./rest-service/gs-rest-service-0.1.0.jar:/app/gs-rest-service-0.1.0.jar
 
-  ibmmq:
+  ibmmq:err
     image: ibmcom/mq:9.1.3.0
     hostname: ibmmq
     container_name: ibmmq
@@ -147,7 +147,7 @@ services:
       MQ_QMGR_NAME: QM1
 
     volumes:
-      #https://docs.confluent.io/3.1.2/connect/userguide.html [hints about putting new connector plugins in the class path]
+      #https://docs.confluent.io/3.1.2/connect/userguide.html  This [hints about putting new connector plugins in the class path]
       - "qm1data:/mnt/mqm"
 volumes:
     qm1data:
