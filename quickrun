@@ -1,0 +1,28 @@
+echo "1 or start Runs-> ./env-start.sh"
+
+echo "2 or restart Runs-> ./env-restart.sh"
+
+echo "3 or reset Runs-> ./env-reset.sh"
+
+echo "4 or stop Runs-> ./env-stop.sh"
+
+echo "5 or destroy Runs-> ./env-destroy.sh"
+
+echo "6 or cstatus Runs-> ./connectorStatus.sh"
+
+echo "7 or estatus Runs-> ./envStatus.sh"
+
+
+echo "11 or devsetup Runs-> ./setup-dev.sh"
+
+echo "12 or devteardown Runs-> ./teardown-dev.sh"
+
+
+echo "21 or csetup Runs-> ./setup-connectors.sh"
+
+echo "22 or cteardown Runs-> ./teardown-dev.sh"
+
+echo "23 or listplugins Runs-> ./listPlugins.sh"
+
+
+echo "31 or restplugin Runs-> ../setupRestPlugin.sh"
